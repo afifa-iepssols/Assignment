@@ -23,7 +23,7 @@ export default function LoginPage() {
     setError('');
 
     try {
-      const res = await fetch('http://localhost:5000/api/auth/login', {
+      const res = await fetch('https://assignment-2-tjzw.onrender.com/api/auth/login', {
         method: 'POST',
         credentials: 'include',
         headers: { 'Content-Type': 'application/json' },
@@ -38,7 +38,7 @@ export default function LoginPage() {
         return;
       }
 
-      const userRes = await fetch("http://localhost:5000/api/auth/me", {
+      const userRes = await fetch("https://assignment-2-tjzw.onrender.com/api/auth/me", {
         credentials: "include",
       });
       if (userRes.ok) {
