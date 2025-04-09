@@ -17,7 +17,7 @@ app.use(
     cors({
       origin: [
         "http://localhost:3000",
-        "https://assignment-iohpg5wgh-afifa-iepssols-projects.vercel.app"
+        "https://assignment-iohpg5wgh-afifa-iepssols-projects.vercel.app/"
       ], // your frontend
       credentials: true,              
     })
