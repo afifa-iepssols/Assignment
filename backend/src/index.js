@@ -13,22 +13,11 @@ require('dotenv').config();
 connectDB();
 const app = express();
 app.use(express.json());
-const allowedOrigins = [
-  "http://localhost:3000",
-  "https://assignment-iohpg5wgh-afifa-iepssols-projects.vercel.app"
-];
-
 app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    credentials: true,
-  })
+    cors({
+      origin: '*', // your frontend
+      credentials: true,               // 👈 allow cookies
+    })
 );
 app.use(cookieParser())
 
