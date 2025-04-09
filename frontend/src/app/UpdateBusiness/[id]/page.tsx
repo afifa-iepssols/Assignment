@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { UploadButton } from "../../../utils/uploadthing"; // Adjust path as needed
+import { UploadButton } from "../../../utils/uploadthing"; 
 import ImageUpload from "../../components/ImageUpload";
 
 interface Business {
