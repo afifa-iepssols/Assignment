@@ -48,7 +48,7 @@ export default function AdminDashboard() {
 
       if (search) params.set("name", search);
 
-      const res = await fetch(`http://localhost:5000/api/business/viewBizs?${params.toString()}`);
+      const res = await fetch(`https://assignment-2-tjzw.onrender.com/api/business/viewBizs?${params.toString()}`);
       const data = await res.json();
 
       setBusinesses(data.businesses || []);
@@ -67,7 +67,7 @@ export default function AdminDashboard() {
     if (!confirmed) return;
 
     try {
-      const res = await fetch(`http://localhost:5000/api/business/deleteBiz/${id}`, {
+      const res = await fetch(`https://assignment-2-tjzw.onrender.com/api/business/deleteBiz/${id}`, {
         method: "DELETE",
         credentials: "include", 
       });
