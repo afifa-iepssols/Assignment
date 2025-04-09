@@ -41,7 +41,7 @@ export default function Landing() {
       if (search) params.set("name", search);
 
       const res = await fetch(
-        `http://localhost:5000/api/business/viewBizs?${params.toString()}`
+        `https://assignment-2-tjzw.onrender.com/api/business/viewBizs?${params.toString()}`
       );
       const data = await res.json();
 
