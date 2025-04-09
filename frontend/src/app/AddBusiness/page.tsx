@@ -74,7 +74,7 @@ export default function AddNewBusiness() {
 
     try {
       setIsSubmitting(true);
-      const res = await fetch("http://localhost:5000/api/business/addBiz", {
+      const res = await fetch("https://assignment-2-tjzw.onrender.com/api/business/addBiz", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
