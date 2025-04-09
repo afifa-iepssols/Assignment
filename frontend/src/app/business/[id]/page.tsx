@@ -37,7 +37,7 @@ export default function BusinessPage() {
   useEffect(() => {
     const fetchBusiness = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/business/viewBiz/${id}`);
+        const res = await fetch(`https://assignment-2-tjzw.onrender.com/api/business/viewBiz/${id}`);
         const data = await res.json();
         setBusiness(data.Biz);
       } catch (error) {
