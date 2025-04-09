@@ -22,7 +22,7 @@ export default function Navbar() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/auth/me", {
+        const res = await fetch("https://assignment-2-tjzw.onrender.com/api/auth/me", {
           credentials: "include",
         });
         if (res.ok) {
@@ -37,7 +37,7 @@ export default function Navbar() {
   }, [setUser]);
 
   const handleLogout = async () => {
-    await fetch("http://localhost:5000/api/auth/logout", {
+    await fetch("https://assignment-2-tjzw.onrender.com/api/auth/logout", {
       method: "POST",
       credentials: "include",
     });
