@@ -40,7 +40,7 @@ export default function UpdateBusinessPage() {
   useEffect(() => {
     const fetchBusiness = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/business/viewBiz/${id}`);
+        const res = await fetch(`https://assignment-2-tjzw.onrender.com/api/business/viewBiz/${id}`);
         const data = await res.json();
         setBusiness(data.Biz);
         setForm(data.Biz);
@@ -74,7 +74,7 @@ export default function UpdateBusinessPage() {
         ...form,
         logo: logo ? { url: logo.url, key: logo.key } : undefined
       };
-      const res = await fetch(`http://localhost:5000/api/business/updateBiz/${id}`, {
+      const res = await fetch(`https://assignment-2-tjzw.onrender.com/api/business/updateBiz/${id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
