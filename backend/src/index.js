@@ -15,7 +15,7 @@ const app = express();
 app.use(express.json());
 app.use(
     cors({
-      origin: 'https://assignment-4d05eup5u-afifa-iepssols-projects.vercel.app/', 
+      origin: 'https://assignment-4d05eup5u-afifa-iepssols-projects.vercel.app', 
       credentials: true, 
     })
 );
