@@ -15,11 +15,11 @@ const app = express();
 app.use(express.json());
 app.use(
     cors({
-      origin: origin: [
+      origin: [
         "http://localhost:3000",
         "https://assignment-iohpg5wgh-afifa-iepssols-projects.vercel.app"
       ], // your frontend
-      credentials: true,               // 👈 allow cookies
+      credentials: true,              
     })
 );
 app.use(cookieParser())
