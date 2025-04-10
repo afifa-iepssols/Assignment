@@ -11,7 +11,7 @@ export default function AddNewBusiness() {
 
   useEffect(() => {
     if (!loading && (!user || user.role !== "Business Owner")) {
-      router.replace("/unauthorized");
+      router.push("/");
     }
   }, [user, loading, router]);
 
