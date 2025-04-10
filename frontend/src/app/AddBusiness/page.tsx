@@ -108,7 +108,7 @@ export default function AddNewBusiness() {
 
       <input name="name" onChange={handleChange} value={form.name} placeholder="Business Name" className="w-full p-2 border rounded" required />
 
-      <select name="category" onChange={handleChange} value={form.category} className="w-full p-2 border rounded" required>
+      <select name="category" onChange={handleChange} value={form.category} className="w-full p-2 border rounded bg-neutral-950 text-white" required>
         <option value="">Select Category</option>
         {["Retail", "Manufacturing", "Services", "Technology", "Agriculture", "Healthcare", "Finance", "Real Estate", "Logistics", "Hospitality", "Other"].map((cat) => (
           <option key={cat} value={cat}>{cat}</option>
